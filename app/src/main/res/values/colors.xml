@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9E9E9E</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#00abab</color>
+    <color name="windowBackgroundLight">#ffdddddd</color>
+    <color name="windowBackgroundDark">#ff111111</color>
+    <color name="mainColorRed">#e3714d</color>
+  <!--  <color name="mainColorBlue">#2196F3</color>-->
+<color name="mainColorBlue">#00BFA5</color>
+
+    <color name="syntax_keyword">#874484</color>
+    <color name="syntax_builtin">#456387</color>
+    <color name="syntax_comment">#e3714d</color>
+    <color name="syntax_number">#339966</color>
+    <color name="syntax_error">#f5815d</color>
+    <color name="syntax_string">#e91e64</color>
+
+
+    <color name="codeEditorTitleBarbgColorLight">#d0d0d0</color>
+    <color name="codeEditorTitleBarbgColorDark">#454642</color>
+    <color name="textColorForDarkBg">#d2d2d2</color>
+    <color name="textColorForLightBg">#000000</color>
+<color name="spinnerDropDownBgDark">#303030</color>
+    <color name="spinnerDropDownBgLight">#ffffff</color>
+</resources>

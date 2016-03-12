@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/parent_layout"
+    android:background="@drawable/diamond_upholstery"
+    tools:context=".ui.Splash"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_top"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_tv"
+        android:text="Petro"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:textColor="#444"
+        android:textSize="50sp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

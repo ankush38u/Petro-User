@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="appMainColor" format="reference" />
+    <attr name="popupThemeForToolBar" format="reference" />
+    <!--  code now fragment attrs
+        <attr name="windowBackground" format="reference" />
+        <attr name="codeEditorTitleBarbg" format="reference" />
+        <attr name="textViewLineNumber" format="reference" />
+        <attr name="editTextDcoderEditor" format="reference" />
+        <attr name="textColor" format="reference" />
+        <attr name="spinnerDropDownBg" format="reference" />
+        <attr name="codeDialogStyle" format="reference"/>-->
+
+
+</resources>
