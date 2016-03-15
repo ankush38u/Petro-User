@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Module</string>
+    <string name="app_name">PetroApp</string>
     <string name="action_settings">Settings</string>
     <string name="preference_file_name">saved_codes.txt</string>
 
@@ -26,4 +26,10 @@
     <string name="preference_file_key">prefs.xml</string>
     <string name="carno_hint">Car No.</string>
     <string name="uid">email</string>
+    <string name="google_maps_key_debug">AIzaSyC3Ab-DZLhI0kvEQnRL3z-6lFSoYkRYeXA</string>
+    <string name="service_not_available">Service Not Available</string>
+    <string name="invalid_lat_long_used">Invalid lat long used</string>
+    <string name="no_address_found">No address found</string>
+    <string name="address_found">address_found</string>
+    <string name="no_geocoder_available">GeoCoder not available</string>
 </resources>

@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-import com.paprbit.module.MainActivity;
 import com.paprbit.module.R;
 import com.paprbit.module.retrofit.gson_pojo.Message;
 import com.paprbit.module.retrofit.utility.ServiceGenerator;
@@ -51,8 +50,8 @@ public class MessageAdmin extends AppCompatActivity implements View.OnClickListe
         if (toolbar != null) {
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-           // getSupportActionBar().setDisplayShowTitleEnabled(false);
-          //  getSupportActionBar().setIcon(R.drawable.gs);
+            // getSupportActionBar().setDisplayShowTitleEnabled(false);
+            //  getSupportActionBar().setIcon(R.drawable.gs);
         }
 
     }

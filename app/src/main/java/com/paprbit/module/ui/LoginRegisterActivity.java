@@ -10,7 +10,6 @@ import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.text.InputType;
 import android.util.Log;
 import android.util.TypedValue;
@@ -42,7 +41,6 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.paprbit.module.MainActivity;
 import com.paprbit.module.R;
 import com.paprbit.module.retrofit.gson_pojo.LoginResponse;
 import com.paprbit.module.retrofit.gson_pojo.Message;
@@ -123,7 +121,7 @@ public class LoginRegisterActivity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_register_dcoder);
         ButterKnife.bind(this);
-        pd=new ProgressDialog(this);
+        pd = new ProgressDialog(this);
         pd.setMessage("Loading...");
         TAG = getLocalClassName();
         setUpTabs();
@@ -307,7 +305,7 @@ public class LoginRegisterActivity extends AppCompatActivity implements View.OnC
                         res = response.body().string();
 
                         if (res != null) {
-                            if (res.startsWith("{") && new JSONObject(res).has("message") && new JSONObject(res).has("type") && (!new JSONObject(res).has("session_id")) ) {
+                            if (res.startsWith("{") && new JSONObject(res).has("message") && new JSONObject(res).has("type") && (!new JSONObject(res).has("session_id"))) {
                                 //we will reach here in case any error on server related to session or database
                                 UserIntraction.makeSnack(coordinatorLayout, new JSONObject(res).getString("message"));
                             } else {
@@ -351,7 +349,7 @@ public class LoginRegisterActivity extends AppCompatActivity implements View.OnC
     private void register() {
         if (pd != null) pd.show();
 
-        Call<Message> call = ServiceGenerator.getService().registerUser(etNameRegister.getText().toString(), etEmailRegister.getText().toString(), etCarnoRegister.getText().toString(),etPassRegister.getText().toString()); //retrofit service call
+        Call<Message> call = ServiceGenerator.getService().registerUser(etNameRegister.getText().toString(), etEmailRegister.getText().toString(), etCarnoRegister.getText().toString(), etPassRegister.getText().toString()); //retrofit service call
         call.enqueue(new Callback<Message>() {
             @Override
             public void onResponse(Response<Message> response, Retrofit retrofit) {
@@ -361,9 +359,9 @@ public class LoginRegisterActivity extends AppCompatActivity implements View.OnC
                     Message msg = response.body();
                     if (msg.isType()) {
                         // if response has a type true means registration is successful then show msg in green and redirect to the login register activity
-                        UserIntraction.makeSnack(coordinatorLayout,msg.getMessage());
+                        UserIntraction.makeSnack(coordinatorLayout, msg.getMessage());
                     } else {
-                        UserIntraction.makeSnack(coordinatorLayout,msg.getMessage());
+                        UserIntraction.makeSnack(coordinatorLayout, msg.getMessage());
                     }
 
                     Log.d("Anki", msg.toString());

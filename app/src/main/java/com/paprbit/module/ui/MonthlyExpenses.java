@@ -60,7 +60,7 @@ public class MonthlyExpenses extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        expence= 0;
+        expence = 0;
     }
 
     private void calculateMonthlyExpense() {

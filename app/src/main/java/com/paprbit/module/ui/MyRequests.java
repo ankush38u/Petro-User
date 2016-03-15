@@ -52,7 +52,7 @@ public class MyRequests extends AppCompatActivity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recView.setLayoutManager(llm);
         setRecyclerView();
-            setTitle("Request Queue");
+        setTitle("Request Queue");
     }
 
     private void setRecyclerView() {

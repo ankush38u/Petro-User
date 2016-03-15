@@ -27,7 +27,7 @@ public class ServiceGenerator {
         //service to use without session
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://goyalsales.com/test/app-services/user/")
+                    .baseUrl("http://anki541993.6te.net/test/app-services/user/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
@@ -59,7 +59,7 @@ public class ServiceGenerator {
             });
 
             retrofit2 = new Retrofit.Builder()
-                    .baseUrl("http://goyalsales.com/test/app-services/user/")
+                    .baseUrl("http://anki541993.6te.net/test/app-services/user/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(httpClient)
                     .build();

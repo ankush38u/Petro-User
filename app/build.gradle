@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'Google Apis:Google Apis:23'
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
 
@@ -37,6 +36,8 @@ dependencies {
     compile 'com.specyci:residemenu:1.6+'
     compile files('libs/razorpay-android-0.11.0.jar')
     compile 'com.romainpiel.shimmer:library:1.4.0@aar'
-    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.google.android.gms:play-services-maps:8.3.0'
+    compile 'com.google.android.gms:play-services-location:8.3.0'
+    compile 'com.google.android.gms:play-services-location:8.3.0'
 
 }

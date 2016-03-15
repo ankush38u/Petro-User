@@ -2,12 +2,12 @@ package com.paprbit.module.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.IntegerRes;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
 import com.paprbit.module.R;
 import com.paprbit.module.retrofit.utility.Storage;
 import com.razorpay.Checkout;
@@ -19,8 +19,8 @@ import butterknife.ButterKnife;
 
 public class PayNow extends AppCompatActivity {
     Activity activity;
-    int pid=0;
-    private String PUBLIC_KEY="rzp_test_gUg6mKgfHlXEyR";
+    int pid = 0;
+    private String PUBLIC_KEY = "rzp_test_gUg6mKgfHlXEyR";
     @Bind(R.id.btn_pay)
     Button payBtn;
 
@@ -30,8 +30,8 @@ public class PayNow extends AppCompatActivity {
         setContentView(R.layout.activity_pay_now);
         ButterKnife.bind(this);
         activity = this;
-        if(getIntent()!=null){
-            pid= Integer.parseInt(getIntent().getExtras().getString("pid"));
+        if (getIntent() != null) {
+            pid = Integer.parseInt(getIntent().getExtras().getString("pid"));
         }
         payBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +43,6 @@ public class PayNow extends AppCompatActivity {
 
 
     public void startPayment() {
-
 
 
         Checkout razorpayCheckout = new Checkout();

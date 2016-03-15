@@ -1,6 +1,7 @@
 package com.paprbit.module.retrofit.service;
 
 import com.paprbit.module.retrofit.gson_pojo.Message;
+import com.paprbit.module.retrofit.gson_pojo.PlaceListResult;
 import com.paprbit.module.retrofit.gson_pojo.RequestData;
 import com.squareup.okhttp.ResponseBody;
 
@@ -9,7 +10,9 @@ import java.util.List;
 import retrofit.Call;
 import retrofit.http.Field;
 import retrofit.http.FormUrlEncoded;
+import retrofit.http.GET;
 import retrofit.http.POST;
+import retrofit.http.Query;
 
 /**
  * Created by ankush38u on 12/26/2015.
@@ -42,6 +45,11 @@ public interface ApiService {
     @FormUrlEncoded
     @POST("services/msg-admin.php")
     Call<Message> msgAdmin(@Field("msg") String message);
+
+
+    @GET("https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyAANCBR0cT1MCB-Wry5xVOcEd50hLwn5MQ&radius=5000&types=gas_station&name=pump")
+    Call<PlaceListResult> getPumps(@Query("location") String latcommalong);
+
 /*
     @GET("services/get-city.php")
     Call<ResponseBody> loadcity();
