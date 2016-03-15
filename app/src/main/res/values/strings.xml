@@ -8,7 +8,7 @@
 
 
     <!-- Strings for fb sdk app level -->
-    <string name="facebook_app_id" translatable="false">1691462227779870</string>
+    <string name="facebook_app_id" translatable="false">FB_APP_ID_HERE</string>
 
 
     <!-- Login Register Activity -->
@@ -26,7 +26,7 @@
     <string name="preference_file_key">prefs.xml</string>
     <string name="carno_hint">Car No.</string>
     <string name="uid">email</string>
-    <string name="google_maps_key_debug">AIzaSyC3Ab-DZLhI0kvEQnRL3z-6lFSoYkRYeXA</string>
+    <string name="google_maps_key_debug">YOUR_KEY_HERE</string>
     <string name="service_not_available">Service Not Available</string>
     <string name="invalid_lat_long_used">Invalid lat long used</string>
     <string name="no_address_found">No address found</string>
