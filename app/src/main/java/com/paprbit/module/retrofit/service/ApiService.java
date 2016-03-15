@@ -47,7 +47,7 @@ public interface ApiService {
     Call<Message> msgAdmin(@Field("msg") String message);
 
 
-    @GET("https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyAANCBR0cT1MCB-Wry5xVOcEd50hLwn5MQ&radius=5000&types=gas_station&name=pump")
+    @GET("https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=YOUR_BROWSER_KEY_HERE&radius=5000&types=gas_station&name=pump")
     Call<PlaceListResult> getPumps(@Query("location") String latcommalong);
 
 /*
